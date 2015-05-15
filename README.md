@@ -1,2 +1,9 @@
-# tips
-Tips to remember
+# Tips
+
+
+* **BASH**
+
+Bash date log output
+```bash
+___script___>>`date "+%Y-%m-%d"`.log
+```
