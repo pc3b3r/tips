@@ -34,3 +34,22 @@ do
         echo "${dirName}/${baseName//.}/${baseName}"
 done
 ```
+* **TOR**
+
+Generate Password: 
+
+```bash 
+tor --hash-password YOURMAGICPASSWORD
+```
+
+copy the password generated, then
+
+```bash
+vim /etc/tor/torrc
+```
+
+Enable ControlPort 9051
+
+paste the hash in HashedControlPassword
+
+enable RunAsDaemon
