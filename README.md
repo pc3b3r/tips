@@ -8,6 +8,12 @@ Bash date log output
 ___script___>>`date "+%Y-%m-%d"`.log 2>&1
 ```
 
+Start .ovpn file
+
+```bash
+sudo openvpn --config ***.ovpn --verb 4
+```
+
 Split a file in multiple files in the folder with the same file name
 
 ```bash
