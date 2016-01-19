@@ -14,6 +14,12 @@ Start .ovpn file
 sudo openvpn --config ***.ovpn --verb 4
 ```
 
+Network usage
+```bash
+sudo nethogs wlan0
+```
+
+
 Split a file in multiple files in the folder with the same file name
 
 ```bash
