@@ -19,6 +19,11 @@ Network usage
 sudo nethogs wlan0
 ```
 
+Permission code 
+```bash
+stat /home
+```
+
 
 Split a file in multiple files in the folder with the same file name
 
