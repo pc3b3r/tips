@@ -19,6 +19,11 @@ Network usage
 sudo nethogs wlan0
 ```
 
+Tunnel Port Forward
+```bash
+ssh -C2qTnN -D 8080 username@ip_host -p port_host
+```
+
 Permission code 
 ```bash
 stat /home
