@@ -56,6 +56,34 @@ do
         echo "${dirName}/${baseName//.}/${baseName}"
 done
 ```
+
+* **cUrl**
+
+CURL with SSL Certificate: 
+
+export all the certificates from green lock in the top left of the browser with signature "DER encoded binary". 
+Name them cert1.cert - cert2.cert - cert3.cert
+
+then convert ALL to PEM
+
+```bash
+openssl x509 -inform DES -in cert1.cert -out pem1.pem -text
+openssl x509 -inform DES -in cert2.cert -out pem2.pem -text
+openssl x509 -inform DES -in cert3.cert -out pem3.pem -text
+```
+
+merge all
+
+```bash
+cat pem*.pem > validCert.pem
+```
+
+run cUrl with PEM certificate
+```
+curl --cacert validCert.pem -X GET "https://www.google.it"
+```
+
+
 * **TOR**
 
 Generate Password: 
