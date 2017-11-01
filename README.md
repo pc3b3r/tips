@@ -103,3 +103,10 @@ Enable ControlPort 9051
 paste the hash in HashedControlPassword
 
 enable RunAsDaemon
+
+* **SSHUTTLE**
+
+Enable Wifi hotspot &
+```bash
+sudo sshuttle -vNHr user@server:port 0/0 -l 10.42.0.1
+```
