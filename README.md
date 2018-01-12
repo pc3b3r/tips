@@ -110,3 +110,15 @@ Enable Wifi hotspot &
 ```bash
 sudo sshuttle -vNHr user@server:port 0/0 -l 10.42.0.1
 ```
+
+* **LOGIN --> TELEGRAM   == > /etc/profile**
+
+```bash
+KEY="TOKEN FROM BOTFATHER"
+#from https://api.telegram.org/bot{$KEY}/getUpdates
+CHATID="CHAT_ID" 
+TIME="10"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+TEXT="`whoami` Login on `hostname`"
+curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $URL >/dev/null
+```
