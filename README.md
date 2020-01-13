@@ -110,6 +110,10 @@ Enable Wifi hotspot &
 ```bash
 sudo sshuttle -vNHr user@server:port 0/0 -l 10.42.0.1
 ```
+Using specific rsa
+```bash
+sshuttle -e 'ssh -i ~/.ssh/id_rsa' -r {___USER___}@{___IP___}:{___PORT___} 0/0 -vvv --exclude {___IP___}
+```
 
 * **LOGIN --> TELEGRAM   == > /etc/profile**
 
